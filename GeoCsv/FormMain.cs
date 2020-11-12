@@ -118,7 +118,7 @@ namespace GeoCsv
                             StringBuilder builder = new StringBuilder();
                             double[] latlon = new double[2];
                             latlon[0] = topLeftX + col * xRes;
-                            latlon[1] = topLeftY + row * yRes;
+                            latlon[1] = topLeftY + rowNo * yRes;
                             if (isGeographic == 0) // 投影转经纬度
                             {
                                 trans.TransformPoint(latlon);
